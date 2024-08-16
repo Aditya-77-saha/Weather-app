@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/pexels-eberhardgross-443446.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container {
+    text-align: center;
+}
+
+.weather-card {
+    background: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+    backdrop-filter: blur(3px);
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+#city-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+#city-input:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+#city-input::placeholder {
+    color: #252323;
+}
+
+#city-input-btn {
+    padding: 10px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#city-input-btn:hover {
+    background-color: red;
+    transition: 1s;
+}
+
+#weather-info {
+    display: none;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: #ffffff;
+}
+
+#description {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#wind-speed {
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+}
+
+#date {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#city-name {
+    color: #ffffff;
+}
